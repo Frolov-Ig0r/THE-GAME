@@ -13,7 +13,7 @@ Cодержание:
 
 
 
-нашел баг? пиши сюда!
+нашел баг? пиши сюда!:
 https://github.com/Frolov-Ig0r/THE-GAME/issues/1
 
 
