@@ -1,0 +1,23 @@
+#pragma once
+#include "Header.h"
+#include "Keys.h"
+class Bot :public Box1
+{
+public:
+	Bot(float nx, float ny, float ndx, float ndy) :Box1(nx, ny, ndx, ndy)
+	{
+
+	}
+	virtual void Move(hgeRect* ball, HGE* hge)
+	{
+		float delta = 5;
+		//this->sety(ball->y1);
+		if (ball->y2 + delta < this->gety() )
+			this->sety(this->gety() - 4);
+		else if (ball->y2 -delta  > this->gety())
+			this->sety(this->gety() + 4);
+		
+		if (ball->x1 > this->getx() && this->getx() > 5)
+			this->setx(this->getx() - 5);
+	}
+};
